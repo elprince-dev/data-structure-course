@@ -13,9 +13,9 @@ function countUniqueValues(arr){
 
 function countUniqueValues2(arr){
  let i = 0
- for (let j=1; j<arr.length; j++){
+ for (let j in arr){
     if(arr[i] !== arr[j]){
-        i +=1
+        i++
         arr[i] = arr[j]
     }
 
