@@ -1,3 +1,5 @@
+
+//O(log(N))
 function bubbleSort(arr){
     let noSwaps = true;
     for (let i = arr.length; i > 0; i--){
