@@ -19,4 +19,4 @@ function bubbleSort(arr){
     return arr
 }
 
-console.log(bubbleSort([23, 54, 243, 1, 76, 0]))
+console.log(bubbleSort([54, 243, 1, 76, 0]))
