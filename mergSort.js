@@ -1,10 +1,5 @@
-function mergeSort(arr){
-
-}
-
-
 //mergeArrays function merges two SORTED arrays
-function mergeArrays(arr1, arr2){
+function merge(arr1, arr2){
     let i = 0;
     let j = 0;
     result = []
@@ -30,4 +25,16 @@ function mergeArrays(arr1, arr2){
     return result
 }
 
-console.log(mergeArrays([1,5,7,10], [2,4,6,11]))
+function mergeSort(arr){
+    if (arr.length <= 1) return arr;
+    let middle = Math.floor(arr.length/2)
+    let left = mergeSort(arr.slice(0,middle))
+    let right = mergeSort(arr.slice(middle))
+    return merge(left, right)
+}
+
+console.log(mergeSort([1,5,10,20,3,12]))
+
+
+
+
